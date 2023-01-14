@@ -64,7 +64,7 @@ export default function Login() {
 
       <img
         src={img_green_square}
-        className="absolute left-[50%] top-[55%] w-64 select-none"
+        className="absolute left-[50%] top-[62%] w-64 select-none"
       />
 
       <img
