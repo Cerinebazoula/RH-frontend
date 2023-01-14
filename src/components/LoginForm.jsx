@@ -49,7 +49,7 @@ function LoginForm() {
 
         <button
           type="submit"
-          className="mt-8 mb-6 bg-[#FFB703] text-black font-bold rounded-lg px-16 py-3 w-80"
+          className="mt-12 mb-8 bg-[#FFB703] text-black font-bold text-xl tracking-wider rounded-lg px-16 py-3 w-80 select-none"
         >
           Log-In
         </button>
