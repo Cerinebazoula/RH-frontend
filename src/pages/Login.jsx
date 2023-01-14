@@ -1,6 +1,13 @@
 import React from "react";
-import styles from "../styles/Login.module.css";
+
+import LoginForm from "../components/LoginForm";
+// import styles from "../styles/Login.module.css";
 
 export default function Login() {
-  return <div>Login</div>;
+  return (
+    <div>
+      <LoginForm />
+      Login
+    </div>
+  );
 }
