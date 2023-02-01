@@ -1,9 +1,17 @@
 import React from "react";
 import { Outlet, Navigate } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 export default function PrivateRoutes() {
   // TODO: implement auth logic
-  let auth = false;
+  let auth = true;
 
-  return auth ? <Outlet /> : <Navigate to="/login" replace />;
+  return auth ? (
+    <div className="flex h-screen w-screen">
+      <Navbar />
+      <Outlet />
+    </div>
+  ) : (
+    <Navigate to="/login" replace />
+  );
 }
