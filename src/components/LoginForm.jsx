@@ -1,21 +1,32 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+
+import Error from "./Error";
 
 import gdg_logo from "../assets/images/gdg_logo.svg";
 import wtm_logo from "../assets/images/wtm_logo.svg";
 
 export default function LoginForm() {
+  const emailRef = useRef();
+  const passwordRef = useRef();
   const navigate = useNavigate();
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const submitHandler = (e) => {
+  async function submitHandler(event) {
+    event.preventDefault();
+
     // TODO: implement the logic of validation, errors, and routting
     const userInput = {
-      email: e.target[0].value,
-      password: e.target[1].value,
+      email: emailRef.current.value,
+      password: passwordRef.current.value,
     };
 
+    // await backend_auth(userInput);
+
     navigate("/", { replace: true });
-  };
+  }
 
   return (
     <div className="bg-white z-10 rounded-xl shadow-lg p-8">
@@ -37,6 +48,9 @@ export default function LoginForm() {
           type="email"
           name="email"
           id="email"
+          ref={emailRef}
+          required
+          autoFocus
           placeholder="email@gmail.com"
           className="border-solid border-2 border-black outline-none px-4 py-3 rounded-lg"
         />
@@ -48,6 +62,8 @@ export default function LoginForm() {
           type="password"
           name="password"
           id="password"
+          ref={passwordRef}
+          required
           placeholder="••••••••"
           className="border-solid border-2 border-black outline-none px-4 py-3 rounded-lg"
         />
@@ -62,9 +78,12 @@ export default function LoginForm() {
         <button
           type="submit"
           className="mt-12 mb-4 bg-[#FFB703] text-black font-bold text-xl tracking-wider rounded-lg px-16 py-3 w-80 select-none"
+          disabled={loading}
         >
           Log-In
         </button>
+
+        <Error message={error} />
 
         <div className="flex mt-5 justify-center items-center space-x-2">
           <p>Don't have an account? </p>
