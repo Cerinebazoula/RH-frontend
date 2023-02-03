@@ -5,7 +5,7 @@ import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Users from "./scenes/Users";
 import Club from "./scenes/Club";
-import Profile from "./scenes/Profile";
+import Profile from "./pages/Profile";
 import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 import Signup from "./pages/Signup";

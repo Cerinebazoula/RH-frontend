@@ -11,7 +11,7 @@ function LinkIcon({ page, isSelected }) {
     case "home":
       return (
         <div
-          className={`p-2 my-1 w-12 h-12 rounded-2xl flex justify-center items-center ${
+          className={`p-2 my-1 w-12 h-12 rounded-lg flex justify-center items-center ${
             isSelected && "bg-white"
           }`}
         >
@@ -24,7 +24,7 @@ function LinkIcon({ page, isSelected }) {
     case "users":
       return (
         <div
-          className={`p-2 my-1 w-12 h-12 rounded-2xl flex justify-center items-center ${
+          className={`p-2 my-1 w-12 h-12 rounded-lg flex justify-center items-center ${
             isSelected && "bg-white"
           }`}
         >
@@ -37,7 +37,7 @@ function LinkIcon({ page, isSelected }) {
     case "club":
       return (
         <div
-          className={`p-2 my-1 w-12 h-12 rounded-2xl flex justify-center items-center ${
+          className={`p-2 my-1 w-12 h-12 rounded-lg flex justify-center items-center ${
             isSelected && "bg-white"
           }`}
         >
@@ -58,7 +58,7 @@ function LinkIcon({ page, isSelected }) {
     case "settings":
       return (
         <div
-          className={`p-2 my-1 w-12 h-12 rounded-2xl flex justify-center items-center ${
+          className={`p-2 my-1 w-12 h-12 rounded-lg flex justify-center items-center ${
             isSelected && "bg-white"
           }`}
         >
