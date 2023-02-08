@@ -38,7 +38,7 @@ export default function Users() {
           />
         </div>
         <VerticleSeparator />
-        <div>
+        <div className="w-full h-full">
           {currentPage === "Members" && <Members />}
           {currentPage === "Leaderboard" && <Leaderboard />}
           {currentPage === "ClubStructure" && <ClubStructure />}
