@@ -1,0 +1,364 @@
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    user-select: none;
+    overflow: hidden;
+}
+
+ .main{
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f4;
+}
+.top_bar{
+    position:absolute;
+    width:100vw;
+    height: 20vh;
+    background-color: #001524;
+    border-top: #FFB703 solid 10px;
+    z-index: 0;
+}
+.hello{
+
+
+position: absolute;
+width: 467px;
+height: 65px;
+left: 10%;
+top: 30%;
+
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 65px;
+
+color: #EDF2F4;
+}
+
+.name{
+    position: absolute;
+    width: 467px;
+    height: 65px;
+    left: 20%;
+    top: 30%;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 65px;
+
+    color:#FFC319;
+}
+.content{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height:80vh;
+    position: relative;
+    top:16%; 
+    left: -20px;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+.top_data{
+    position: relative;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.middle_data{
+    display: flex;
+    width:100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.bottom_data{
+    display:flex;
+    width:100%;
+    height: 25%;
+    justify-content: center;
+    align-items: center;
+}
+.mini_block{
+    display: flex;
+    background-color: #edf2f4;
+    height: 110px;
+    width: 110px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px  #00000021;
+    border: 1px solid transparent;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.top_data .mini_block{
+    position: relative; 
+    z-index: inherit;
+    margin: 0 5%;
+}
+
+.bottom_data .mini_block{
+    position: relative; 
+    z-index: inherit;
+    margin: 0 5%;
+}
+
+.chart{
+
+    background-color: #EDF2F4;
+    height: 95%;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px  #00000021; 
+    margin: 0 2%;
+}
+.todo_list{
+    display:flex;
+    flex-direction: column;
+    background-color: #EDF2F4;
+    height: 95%;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px  #00000021; 
+    margin: 0 2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bignumber{
+    position: relative;
+    top:10px;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    color:#D62828;
+}
+.text{
+    position:relative;
+    top:-7px;
+    font-family: 'MontSerrat';
+    font-weight: 600;
+    font-size:14px;
+    color: #001524;
+}
+
+ .button{
+    font-family: 'MontSerrat';
+    font-weight: 400;
+    font-size: 14px;
+    color: #001524;
+    background-color: #FFB703;
+    padding: 2px 15px;
+    border-radius: 5px;
+} 
+ .button:hover{
+    background-color: #ffcb47;
+    transition: 0.2s linear;
+ }
+
+.button:hover{
+    cursor: pointer;
+}
+
+.profilepic{
+    width:70px;
+    clip-path:circle();
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size: 10px;
+    font-family: 'MontSerrat';
+}
+
+.bigtitle{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.checkblock{
+    margin: 2px 10px;
+}
+
+.textinput{
+    background-color: #EDF2F4;
+    border-bottom: #001524 solid 1px;
+    margin: 0px 10px;
+    width: 80%;
+    height: 20px;
+}
+.checkblock{
+    height: 10%;
+    width: 90%;
+    margin-left: 10% ;
+}
+.textinput:focus{
+    outline: none;
+}
+
+.plusbutton{
+    background-color: #FFB703;
+    display: inline;
+    padding: 2px 7px 5px 7px;
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+.plusbutton:hover{
+    cursor:pointer;
+}
+
+.chart img{
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    user-select: none;
+}
+.mini_block img{
+    user-select: none;
+}
+
+@media screen and (max-width: 1000px){
+    .name{
+        left:22%;
+    }
+}
+
+@media screen and (max-width : 800px){
+
+    .top_data .mini_block{
+        position: relative; 
+        z-index: inherit;
+        margin: 0 1%;
+    }
+    .name{
+        left:24%;
+    }
+    .bottom_data .mini_block{
+        position: relative; 
+        z-index: inherit;
+        margin: 0 1%;
+    }
+    .middle_data{
+        display: flex;
+        width:100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+     .main{
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    background-color: #edf2f4;
+    }
+    .content{
+        position: relative;
+        display: block;
+        width: 100%;
+        height:100%;
+        position: relative;
+        top:16%; 
+        left: -20px;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+    }
+    *{
+        overflow:visible;
+    }
+    .top_data{
+        position: relative;
+        width: 100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top:15px;
+    
+    }
+    .bottom_data{
+        display:flex;
+        width:100%;
+        height: 25%;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        background-color: #EDF2F4;
+    }
+    .title{
+        position:relative;
+        top:5px;
+    }
+
+    .profilepic{
+        width:70px;
+        clip-path:circle();
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+
+}
+@media screen and (max-width : 650px){
+    .hello{
+        display: block;
+        position: relative;
+        top:-35px;
+        left:10%;
+    }
+    .name{
+        display: block;
+        position: relative;
+        left:10%;
+        top:-50px;
+    }
+}
+
+@media screen and (max-width : 600px){
+    .top_data{
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: block;
+
+        top:15px;
+    
+    }
+    .bottom_data{
+        display:block;
+        width:100%;
+        height: auto;
+
+    }
+    .top_data .mini_block{
+        display: flex;
+        margin: auto;
+    }
+    .bottom_data .mini_block{
+        display:flex;
+        margin: auto;
+    }
+}
