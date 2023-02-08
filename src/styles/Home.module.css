@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 * {
     margin:0;
@@ -194,9 +192,7 @@ color: #EDF2F4;
     font-weight: 700;
 }
 
-.check{
 
-}
 .checkblock{
     margin: 2px 10px;
 }
